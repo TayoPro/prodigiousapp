@@ -184,6 +184,7 @@ def placeorder(request):
     api_key = 'sk_test_0c3bb25f14513ee95dcbe057e8b007f8b8480aa1'
     url = 'https://api.paystack.co/transaction/initialize'
     callback_url = 'http://kolapogbadamosihomes.com/order/ordercompleted/'
+    callback_url = 'http://www.kolapogbadamosihomes.com/order/ordercompleted/'
     ordercode =  request.POST['order_number']
     autogen_ref = ''.join(random.choices(string.digits + string.ascii_letters, k=8))
     current_user = User.objects.get(username = request.user.username)
