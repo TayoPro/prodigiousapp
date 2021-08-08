@@ -34,10 +34,10 @@
                             <div>
                                 <p>{{item.product.title}}</p>
                                 <small>
-                                    {% if item.discount_price %}
-                                        <span>#{{item.discount_price | floatformat:2 | intcomma}}</span>
+                                    {% if item.product.discount_price %}
+                                        <span>#{{item.product.discount_price | floatformat:2 | intcomma}}</span>
                                     {% else %}
-                                        <span> #{{item.price | floatformat:2 | intcomma}}</span>
+                                        <span> #{{item.product.price | floatformat:2 | intcomma}}</span>
                                     {% endif %}                                                     
                                 </small>
                                 <br>
